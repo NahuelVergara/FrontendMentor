@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.navbar>a {
+    text-decoration: none;
+    /* background-color: aqua; */
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+    "card1" "card1" "card1"
+    "card2" "card2" "card2";
+    margin: 15px;
+}
+
+.card1{
+    grid-area: card1;
+    background-color: green;
+
+}
+
+.card2{
+    grid-area: card2;
+    background-color: rgb(177, 32, 16);
+
+}
+
+.card3{
+    grid-area: card3;
+    background-color: grey;
+
+}

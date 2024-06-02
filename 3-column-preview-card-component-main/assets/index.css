@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ------------Selector Global------------ */
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
+}
+
+figure {
+    width: 80px;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin: 0 40px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0 40px;
+    line-height: 1.6rem;
+}
+
+img {
+    width: 100%;
+    
+    object-fit: cover;
+    margin: 0 40px;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 35px;
+    margin: 50px 40px 0;
+    /* border: none;
+    outline: none;
+    cursor: pointer;  */
+}
+/* ------------Main------------ */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ------------Primera caja------------ */
+.firts-card {
+    background-color: hsl(31, 77%, 52%);
+    gap: 40px;
+}
+
+.firts-card>button {
+    color: hsl(31, 77%, 52%);
+}
+
+/* ------------Segunda caja------------ */
+
+.second-card {
+    background-color: hsl(184, 100%, 22%);
+    gap: 40px;
+}
+
+.second-card>button {
+    color: hsl(184, 100%, 22%);
+}
+
+/* ------------Tercera caja------------ */
+.third-card {
+    background-color: hsl(179, 100%, 13%);
+    gap: 40px;
+}
+
+.third-card>button {
+    color: hsl(179, 100%, 13%);
+}
+
+/* ------------Animation------------ */
+.firts-card>button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+    border: solid;
+}
+
+.second-card>button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+    border: solid;
+}
+
+.third-card>button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+    border: solid;
+}

@@ -1,0 +1,193 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/*
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 56 / 64 / 80 / 96 / 128
+*/
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: hsl(30, 54%, 90%);
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Part 1/4(Spacing) */
+.recipe_card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 3.6rem 3.6rem;
+  /* height: 80%; */
+  margin: 92px 0;
+  width: 50%;
+  border-radius: 14px;
+}
+
+/* Part 5/4(Section border) */
+.recipe_card section:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin-bottom: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+/* ////////////////////////// */
+
+.recipe_pic {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 2.4rem;
+}
+
+.main_heading {
+  font-family: "Young Serif", serif;
+  color: hsl(24, 5%, 18%);
+  font-size: 4.2rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.recipe_des {
+  margin-bottom: 3.2rem;
+}
+
+.recipe_prep_time {
+  padding: 2.4rem 2.4rem;
+  border-radius: 8px;
+  background-color: hsl(330, 100%, 98%);
+  margin-bottom: 2.4rem;
+}
+
+.recipe_prep_heading {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 1.2rem;
+}
+
+.prep_time_details {
+  font-weight: 700;
+}
+
+.prep_time_list li {
+  margin-left: 2.4rem;
+  /* text-indent: 20px; */
+  padding-left: 2rem;
+}
+
+.prep_time_list li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.prep_time_list li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+/* /////////////////////////////// */
+
+/* Part 2/4(Spacing) */
+.sub_heading {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+.recipe_ingredients_list li {
+  margin-left: 2.4rem;
+  /* text-indent: 12px; */
+  padding-left: 1.2rem;
+}
+
+.recipe_ingredients_list li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.recipe_ingredients_list li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+/* //////////////////////////// */
+
+/* Part 3/4(Spacing) */
+.recipe_instructions {
+  font-weight: 700;
+}
+
+/* Used padding-left instead of text-indent due to the trailing line not getting indented */
+.recipe_instructions_list li {
+  margin-left: 2.4rem;
+  padding-left: 1.2rem;
+  /* text-indent: -5px; */
+  line-height: 2.4rem;
+}
+
+.recipe_instructions_list li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.recipe_instructions_list li::marker {
+  font-family: "Outfit", sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+/* //////////////////////////// */
+
+/* Part 4/4(Spacing) */
+
+.recipe_nutrition {
+  /* margin-left: 2.4rem; */
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe_nutrition_heading + p {
+  margin-bottom: 2.3rem;
+}
+
+.recipe_calories:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.nutritional_stats {
+  margin-left: 0;
+  flex: 1;
+}
+
+.nutritional_value {
+  flex: 1;
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.nutritional_stats p {
+  padding-left: 3.1rem;
+}
+
+.nutritional_value p {
+  margin-left: -0.8rem;
+}
+
+.nutritional_stats p:not(:last-child),
+.nutritional_value p:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+}
