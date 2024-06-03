@@ -1,0 +1,39 @@
+@media(width<600px) 
+{
+    .container {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: repeat(25, 1fr);
+        grid-template-areas: 
+        "caja1 caja1 caja1"
+        "caja1 caja1 caja1"
+        "caja1 caja1 caja1"
+        "caja1 caja1 caja1"
+        "caja1 caja1 caja1"
+        "caja1 caja1 caja1"
+        /* --------------------- */
+        "caja2 caja2 caja2"
+        "caja2 caja2 caja2"
+        "caja2 caja2 caja2"
+        "caja2 caja2 caja2"
+        /* --------------------- */
+        "caja4 caja4 caja4"
+        "caja4 caja4 caja4"
+        "caja4 caja4 caja4"
+        "caja4 caja4 caja4"
+        /* --------------------- */
+        "caja5 caja5 caja5"
+        "caja5 caja5 caja5"
+        "caja5 caja5 caja5"
+        "caja5 caja5 caja5"
+        "caja5 caja5 caja5"
+        /* --------------------- */
+        "caja3 caja3 caja3"
+        "caja3 caja3 caja3"
+        "caja3 caja3 caja3"
+        "caja3 caja3 caja3"
+        "caja3 caja3 caja3"
+        "caja3 caja3 caja3";
+        
+    }
+}
